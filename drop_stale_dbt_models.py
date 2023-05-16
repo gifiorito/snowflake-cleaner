@@ -2,10 +2,10 @@
 import snowflake.connector
 
 # Snowflake connection details
-account = '<your_snowflake_account_url>'
-user = '<your_user>'
-password = '<your_password>'
-warehouse = '<your_warehouse>'
+account = '<your_snowflake_account_url>' # Replace with your account information
+user = '<your_user>'  # Replace with your username
+password = '<your_password>'  # Replace with your password
+warehouse = '<your_warehouse>'  # Replace with your warehouse
 
 # Databases to check all schemas
 databases = ['<database1>', '<database2>', '<database3>']
