@@ -8,9 +8,10 @@ password = '<your_password>'  # Replace with your password
 warehouse = '<your_warehouse>'  # Replace with your warehouse
 
 # Databases to check all schemas
-databases = ['<database1>', '<database2>', '<database3>']
+databases = ['<database1>', '<database2>', '<database3>'] # Replace with the name of the databases you're using
 
 # SQL query to identify dbt models that haven't been updated in over 60 days
+# Can be customized by adding or removing parameters on the WHERE clause
 query = """
 SELECT table_catalog, table_schema, table_name, table_type
 FROM information_schema.tables
