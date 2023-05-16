@@ -2,13 +2,13 @@
 import snowflake.connector
 
 # Snowflake connection details
-account = '<your_snowflake_account_url>'
-user = '<your_user>'
-password = '<your_password>'
-schema_pattern = 'dbt_cloud_pr%'
+account = '<your_snowflake_account_url>' # Replace with your account information
+user = '<your_user>' # Replace with your username
+password = '<your_password>' # Replace with your password
+schema_pattern = 'dbt_cloud_pr%' # Might need replacing if you've customized the dbt's CI check
 
 # Snowflake databases to delete schemas from
-databases = ['<database1>', '<database2>', '<database3>']
+databases = ['<database1>', '<database2>', '<database3>'] # Replace with the name of the databases you're using
 
 # Iterate over each database
 for database in databases:
